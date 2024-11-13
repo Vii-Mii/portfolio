@@ -11,9 +11,7 @@ st.set_page_config(
 # Custom CSS for navigation buttons and other elements
 st.markdown("""
 <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
+
     
     /* Navigation Button Styles */
     .stButton > button {
