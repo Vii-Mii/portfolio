@@ -43,7 +43,7 @@ def show():
         resume_col1, resume_col2, resume_col3 = st.columns([1.2, 2, 1.2])
         with resume_col2:
             try:
-                with open("assets/resume.pdf", "rb") as pdf_file:
+                with open("Portfolio-SDE/assets/resume.pdf", "rb") as pdf_file:
                     PDFbyte = pdf_file.read()
                 
                 st.download_button(
