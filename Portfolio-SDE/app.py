@@ -9,31 +9,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Override any system dark mode
-st.markdown("""
-    <script>
-        var observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (document.documentElement.getAttribute('data-theme') !== 'light') {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                }
-            });
-        });
-        observer.observe(document.documentElement, { attributes: true });
-    </script>
-    <style>
-        .stApp {
-            background-color: #FFFFFF !important;
-        }
-        .stMarkdown, .stText {
-            color: #31333F !important;
-        }
-        [data-testid="stSidebar"] {
-            background-color: #f0f2f6 !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 # Custom CSS for navigation buttons and other elements
 st.markdown("""
 <style>
