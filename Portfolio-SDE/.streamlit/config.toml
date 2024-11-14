@@ -10,8 +10,6 @@ font = "sans serif"
 gatherUsageStats = false
 
 [client]
-# Force minimal mode to hide settings
-toolbarMode = "minimal"
+# Change to "auto" to show settings menu
+toolbarMode = "auto"
 showSidebarNavigation = true
-# Force light theme
-theme = "light"

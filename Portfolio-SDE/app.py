@@ -6,11 +6,10 @@ st.set_page_config(
     page_title="Vijayaraj Pushpalingam | Portfolio",
     page_icon="👨‍💻",
     layout="wide",
-    initial_sidebar_state="expanded",
-    menu_items=None  # This removes the three-dot menu
+    initial_sidebar_state="expanded"
 )
 
-# Force light theme
+# Force light theme but allow menu
 st.markdown("""
     <style>
         .stApp {
@@ -21,10 +20,6 @@ st.markdown("""
         }
         [data-testid="stSidebar"] {
             background-color: #f0f2f6 !important;
-        }
-        /* Hide theme menu */
-        .stDeployButton, #MainMenu {
-            display: none !important;
         }
     </style>
 """, unsafe_allow_html=True)
