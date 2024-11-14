@@ -89,64 +89,59 @@ def show():
         # Contact Links Container
         st.markdown("### 🤝 Let's Connect!")
         
-        # Container for social links with reduced width
+# Container for social links
+            # Replace the social links container section with this:
         _, center_col, _ = st.columns([0.1, 0.8, 0.1])
         with center_col:
-            # GitHub
-            st.markdown('<div class="github-btn">', unsafe_allow_html=True)
-            github_btn = st.button(
-                "🔗 GitHub",
-                help="Visit my GitHub profile",
-                use_container_width=True,
-            )
-            st.markdown('</div>', unsafe_allow_html=True)
-            if github_btn:
-                webbrowser.open_new_tab("https://github.com/Vii-Mii")
-            
-            # LinkedIn
-            st.markdown('<div class="linkedin-btn">', unsafe_allow_html=True)
-            linkedin_btn = st.button(
-                "💼 LinkedIn",
-                help="Connect with me on LinkedIn",
-                use_container_width=True,
-            )
-            st.markdown('</div>', unsafe_allow_html=True)
-            if linkedin_btn:
-                webbrowser.open_new_tab("https://www.linkedin.com/in/vijayaraj-p-0b11821b6/")
-            
-            # LeetCode
-            st.markdown('<div class="leetcode-btn">', unsafe_allow_html=True)
-            leetcode_btn = st.button(
-                "👨‍💻 LeetCode",
-                help="Check my LeetCode profile",
-                use_container_width=True,
-            )
-            st.markdown('</div>', unsafe_allow_html=True)
-            if leetcode_btn:
-                webbrowser.open_new_tab("https://leetcode.com/VijayarajP/")
-            
-            # GeeksforGeeks
-            st.markdown('<div class="gfg-btn">', unsafe_allow_html=True)
-            gfg_btn = st.button(
-                "🎯 GeeksforGeeks",
-                help="View my GeeksforGeeks profile",
-                use_container_width=True,
-            )
-            st.markdown('</div>', unsafe_allow_html=True)
-            if gfg_btn:
-                webbrowser.open_new_tab("https://auth.geeksforgeeks.org/user/vjlingam7")
-            
-            # Email
-            st.markdown('<div class="email-btn">', unsafe_allow_html=True)
-            email_btn = st.button(
-                "📧 Email",
-                help="Send me an email",
-                use_container_width=True,
-            )
-            st.markdown('</div>', unsafe_allow_html=True)
-            if email_btn:
-                webbrowser.open_new_tab("mailto:vjlingam7@gmail.com")
-        
+            st.markdown("""
+                <style>
+                    .social-link {
+                        display: block;
+                        text-decoration: none;
+                        margin: 8px 0;
+                    }
+                    .social-button {
+                        width: 100%;
+                        padding: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        color: white;
+                        font-size: 16px;
+                        cursor: pointer;
+                        text-align: center;
+                    }
+                </style>
+                
+                <a class='social-link' href='https://github.com/Vii-Mii' target='_blank'>
+                    <div class='social-button' style='background-color: #24292e;'>
+                        🔗 GitHub
+                    </div>
+                </a>
+                
+                <a class='social-link' href='https://www.linkedin.com/in/vijayaraj-p-0b11821b6/' target='_blank'>
+                    <div class='social-button' style='background-color: #0077b5;'>
+                        💼 LinkedIn
+                    </div>
+                </a>
+                
+                <a class='social-link' href='https://leetcode.com/VijayarajP/' target='_blank'>
+                    <div class='social-button' style='background-color: #f89f1b;'>
+                        👨‍💻 LeetCode
+                    </div>
+                </a>
+                
+                <a class='social-link' href='https://auth.geeksforgeeks.org/user/vjlingam7' target='_blank'>
+                    <div class='social-button' style='background-color: #2f8d46;'>
+                        🎯 GeeksforGeeks
+                    </div>
+                </a>
+                
+                <a class='social-link' href='mailto:vjlingam7@gmail.com'>
+                    <div class='social-button' style='background-color: #EA4335;'>
+                        📧 Email
+                    </div>
+                </a>
+            """, unsafe_allow_html=True)
         # Quick Highlights
         st.divider()
         st.subheader("🏆 Quick Highlights")
