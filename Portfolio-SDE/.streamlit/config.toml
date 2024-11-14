@@ -10,7 +10,17 @@ font = "sans serif"
 gatherUsageStats = false
 
 [client]
-# Force light theme
+# Force minimal mode to hide settings
 toolbarMode = "minimal"
 showSidebarNavigation = true
+# Force light theme
 theme = "light"
+
+[runner]
+# Disable theme switching
+fastRerenderOnThemeChange = false
+
+[server]
+# Additional server settings to enforce theme
+enableXsrfProtection = true
+enableCORS = false

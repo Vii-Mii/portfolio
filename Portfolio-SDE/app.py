@@ -1,13 +1,33 @@
 import streamlit as st
 from components import home_show, experience_show, projects_show, education_show, skills_show
 
-# Hide all default elements
+# Force light mode settings
 st.set_page_config(
     page_title="Vijayaraj Pushpalingam | Portfolio",
     page_icon="👨‍💻",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
+    menu_items=None  # This removes the three-dot menu
 )
+
+# Force light theme
+st.markdown("""
+    <style>
+        .stApp {
+            background-color: #FFFFFF !important;
+        }
+        .stMarkdown, .stText {
+            color: #31333F !important;
+        }
+        [data-testid="stSidebar"] {
+            background-color: #f0f2f6 !important;
+        }
+        /* Hide theme menu */
+        .stDeployButton, #MainMenu {
+            display: none !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Custom CSS for navigation buttons and other elements
 st.markdown("""

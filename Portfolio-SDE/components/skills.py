@@ -52,7 +52,7 @@ def show():
         <h1>
             🛠️ Skills & Expertise
         </h1>
-        <p >
+        <p style='color: #666;'>
             Leveraging modern technologies to build scalable solutions
             </p>
     """, unsafe_allow_html=True)
