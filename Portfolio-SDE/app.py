@@ -9,21 +9,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Force light theme but allow menu
-st.markdown("""
-    <style>
-        .stApp {
-            background-color: #FFFFFF !important;
-        }
-        .stMarkdown, .stText {
-            color: #31333F !important;
-        }
-        [data-testid="stSidebar"] {
-            background-color: #f0f2f6 !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 # Custom CSS for navigation buttons and other elements
 st.markdown("""
 <style>
