@@ -130,7 +130,7 @@ def show():
                     </div>
                 </a>
                 
-                <a class='social-link' href='https://www.geeksforgeeks.org/user/vii_leaner/' target='_blank'>
+                <a class='social-link' href='https://auth.geeksforgeeks.org/user/vjlingam7' target='_blank'>
                     <div class='social-button' style='background-color: #2f8d46;'>
                         🎯 GeeksforGeeks
                     </div>
