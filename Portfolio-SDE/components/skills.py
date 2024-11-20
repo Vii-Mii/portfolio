@@ -110,6 +110,7 @@ def show():
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" class="tech-icon" title="CSS3"/>
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" class="tech-icon" title="JavaScript"/>
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" class="tech-icon" title="React"/>
+            <img src='https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-plain.svg' class="tech-icon" title="Django"/>
         </div>
         <div class="skill-content">
             <div class="skill-item">🌐 HTML5/CSS3 - Modern Web Development</div>
