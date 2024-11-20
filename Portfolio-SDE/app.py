@@ -31,6 +31,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Sidebar navigation
+
+
 def navigation():
     with st.sidebar:
         st.title("Navigation 🧭")
@@ -40,9 +42,9 @@ def navigation():
             "Skills": skills_show,
             "Projects": projects_show,
             "Education": education_show,
-            
+
         }
-        
+
         for page_name, page_func in pages.items():
             if st.button(
                 page_name,
@@ -66,4 +68,4 @@ elif st.session_state.current_page == "Projects":
 elif st.session_state.current_page == "Education":
     education_show()
 elif st.session_state.current_page == "Skills":
-    skills_show() 
+    skills_show()
