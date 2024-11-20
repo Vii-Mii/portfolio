@@ -52,6 +52,13 @@ def navigation():
                 use_container_width=True,
             ):
                 st.session_state.current_page = page_name
+        
+        st.markdown("---")
+        st.markdown("""
+        > *"Simplicity is the soul of efficiency."*  
+&nbsp;&nbsp;– Austin Freeman
+        """)
+        
 
 if 'current_page' not in st.session_state:
     st.session_state.current_page = "Home"
