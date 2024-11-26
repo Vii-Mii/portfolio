@@ -30,7 +30,6 @@ def show():
         
         ### 🌟 Current Focus
         - Exploring Cloud-Native Architecture
-        - Contributing to Open Source
         - Mastering System Design Patterns
         """)
         
